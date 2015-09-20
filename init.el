@@ -23,12 +23,13 @@
 
 (load-theme 'railscasts t nil)
 
+(setq inhibit-startup-message t)
+(defalias 'yes-or-no-p 'y-or-n-p)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (require 'magit)
 
 (global-set-key (kbd "C-x g") 'magit-status)
-
-(setq inhibit-startup-message t)
 (setq magit-status-buffer-switch-function 'switch-to-buffer)
-(defalias 'yes-or-no-p 'y-or-n-p)
 
 (eshell)
