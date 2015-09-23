@@ -1,5 +1,6 @@
-auto-save-list/
-backups/
-elpa/
-eshell/
-places
+/auto-save-list/
+/backups/
+/elpa/
+/eshell/
+/places
+/server/
