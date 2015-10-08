@@ -1,6 +1,8 @@
-auto-save-list/
-backups/
-elpa/
-eshell/
-places
-url/
+/auto-save-list/
+/backups/
+/elpa/
+/eshell/
+/places
+/server/
+/ido.last
+/url/
