@@ -1,17 +1,17 @@
 (require 'package)
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-			 ("marmalade" . "http://marmalade-repo.org/packages")
-			 ("melpa" . "http://melpa.milkbox.net/packages/")))
+                         ("marmalade" . "http://marmalade-repo.org/packages")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 (defvar my-packages '(better-defaults
-		      paredit
-		      idle-highlight-mode
-		      ido-ubiquitous
-		      find-file-in-project
-		      magit
-		      smex
-		      scpaste
+                      paredit
+                      idle-highlight-mode
+                      ido-ubiquitous
+                      find-file-in-project
+                      magit
+                      smex
+                      scpaste
                       railscasts-theme))
 
 (package-initialize)
