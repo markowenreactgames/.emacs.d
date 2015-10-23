@@ -5,13 +5,13 @@
 			 ("melpa" . "https://melpa.milkbox.net/packages/")))
 
 (defvar my-packages '(better-defaults
-		      paredit
-		      idle-highlight-mode
-		      ido-ubiquitous
-		      find-file-in-project
-		      magit
-		      smex
-		      scpaste
+                      paredit
+                      idle-highlight-mode
+                      ido-ubiquitous
+                      find-file-in-project
+                      magit
+                      smex
+                      scpaste
                       railscasts-theme))
 
 (package-initialize)
@@ -33,5 +33,10 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (setq magit-status-buffer-switch-function 'switch-to-buffer)
+
+(set-face-attribute 'default nil :height 120)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
 
 (eshell)
