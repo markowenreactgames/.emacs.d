@@ -33,7 +33,12 @@
 (setq indent-line-function 'insert-tab)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-(global-set-key (kbd "C-x g") 'magit-status)
 (setq magit-status-buffer-switch-function 'switch-to-buffer)
+
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<down>") 'shrink-window)
+(global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 (eshell)
