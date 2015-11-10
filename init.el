@@ -27,6 +27,7 @@
 
 (load-theme 'railscasts t nil)
 (setq inhibit-startup-message t)
+(set-default 'truncate-lines t)
 (set-face-attribute 'default nil :height 120)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
