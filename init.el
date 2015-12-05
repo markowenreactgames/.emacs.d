@@ -28,14 +28,15 @@
 (load-theme 'railscasts t nil)
 (setq inhibit-startup-message t)
 (set-default 'truncate-lines t)
-(set-face-attribute 'default nil :height 120)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
-(setq lisp-indent-offset 2)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq magit-status-buffer-switch-function 'switch-to-buffer)
+
+;; (set-face-attribute 'default nil :font "Anonymous Pro" :height 120)
+;; (setq lisp-indent-offset 2)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
