@@ -11,8 +11,7 @@
                       find-file-in-project
                       magit
                       smex
-                      scpaste
-                      railscasts-theme))
+                      scpaste))
 
 (package-initialize)
 
@@ -25,7 +24,7 @@
 
 (require 'magit)
 
-(load-theme 'railscasts t nil)
+(set-face-attribute 'default nil :font "Anonymous Pro" :height 120)
 (setq inhibit-startup-message t)
 (set-default 'truncate-lines t)
 (setq-default indent-tabs-mode nil)
@@ -34,9 +33,6 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq magit-status-buffer-switch-function 'switch-to-buffer)
-
-;; (set-face-attribute 'default nil :font "Anonymous Pro" :height 120)
-;; (setq lisp-indent-offset 2)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
