@@ -1,7 +1,6 @@
 (require 'package)
 
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("marmalade" . "https://marmalade-repo.org/packages")
                          ("melpa" . "https://melpa.milkbox.net/packages/")))
 
 (defvar my-packages '(better-defaults
@@ -11,7 +10,8 @@
                       find-file-in-project
                       magit
                       smex
-                      scpaste))
+                      scpaste
+                      railscasts-theme))
 
 (package-initialize)
 
@@ -24,6 +24,7 @@
 
 (require 'magit)
 
+(load-theme 'railscasts t nil)
 (set-face-attribute 'default nil :font "Anonymous Pro" :height 120)
 (setq inhibit-startup-message t)
 (set-default 'truncate-lines t)
