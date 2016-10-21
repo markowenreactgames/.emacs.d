@@ -25,7 +25,6 @@
 (require 'magit)
 
 (load-theme 'railscasts t nil)
-(set-face-attribute 'default nil :font "Anonymous Pro" :height 120)
 (setq inhibit-startup-message t)
 (set-default 'truncate-lines t)
 (setq-default indent-tabs-mode nil)
